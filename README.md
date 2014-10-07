@@ -11,7 +11,7 @@ In your word document put placeholder names in double pipes || e.g. `||client_em
 
 Example usage:
 ```ruby
-  buffer = DocxTemplater.new.replace_file_with_content('fake.docx',
+  buffer = DocxTemplater.new.replace_file_with_content('path/to/your.docx',
      {
        :client_email1 => 'test@example.com',
        :client_phone1 => '555-555-5555',
