@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'docx_templater'
-  s.version     = '0.2.3'
+  s.version     = '0.2.4'
   s.summary     = "Uses a .docx as a template and replaces 'tags' within || with other content"
   s.description = "Uses a .docx file with keyword tags within '||' as a template. This gem will then open the .docx and replace those tags with dynamically defined content."
   s.authors     = ["Paul Smith", "Michael Ries"]
@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
     "lib/docx/placeholder_observer.rb"]
   s.add_runtime_dependency "rubyzip", "~> 1.1"
   s.add_runtime_dependency "htmlentities", "~> 4.3.1"
+  s.add_development_dependency "ataru", "~> 0.1"
   s.add_development_dependency "rake", "~> 10.1"
   s.add_development_dependency "rspec", "~> 2.14"
   s.homepage    = 'http://rubygems.org/gems/docx_templater'
