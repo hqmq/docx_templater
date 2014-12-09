@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/hqmq/docx_templater.png)](https://travis-ci.org/hqmq/docx_templater)
-[![Code Climate](https://codeclimate.com/github/hqmq/docx_templater.png)](https://codeclimate.com/github/hqmq/docx_templater)
-[![Dependency Status](https://gemnasium.com/hqmq/docx_templater.png)](https://gemnasium.com/hqmq/docx_templater)
+[![Build Status](https://travis-ci.org/mmmries/docx_templater.png)](https://travis-ci.org/mmmries/docx_templater)
+[![Code Climate](https://codeclimate.com/github/mmmries/docx_templater.png)](https://codeclimate.com/github/mmmries/docx_templater)
+[![Dependency Status](https://gemnasium.com/mmmries/docx_templater.png)](https://gemnasium.com/mmmries/docx_templater)
 
 Docx Templater
 ==============
