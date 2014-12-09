@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "ataru", "~> 0.1"
   s.add_development_dependency "rake", "~> 10.1"
   s.add_development_dependency "rspec", "~> 2.14"
-  s.homepage    = 'http://rubygems.org/gems/docx_templater'
+  s.homepage    = 'https://github.com/mmmries/docx_templater'
 end
