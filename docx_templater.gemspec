@@ -14,7 +14,6 @@ Gem::Specification.new do |s|
     "lib/docx/placeholder_observer.rb"]
   s.add_runtime_dependency "rubyzip", "~> 1.1"
   s.add_runtime_dependency "htmlentities", "~> 4.3.1"
-  s.add_development_dependency "ataru", "~> 0.1"
   s.add_development_dependency "rake", "~> 10.1"
   s.add_development_dependency "rspec", "~> 3.0"
   s.homepage    = 'http://rubygems.org/mmmries/docx_templater'
