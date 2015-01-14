@@ -16,28 +16,28 @@ describe "DocxTemplater :convert_newlines" do
   context "option on" do
     let(:options){ {convert_newlines: true} }
     it "can convert newlines with docx equivalents" do
-      body.should_not include("||quotes||")
-      body.should include("<w:t>Be excellent to eachother ~Bill and Ted<w:br/>Typing is not the bottlneck<w:br/>Do something awesome.</w:t>")
+      expect(body).to_not include("||quotes||")
+      expect(body).to include("<w:t>Be excellent to eachother ~Bill and Ted<w:br/>Typing is not the bottlneck<w:br/>Do something awesome.</w:t>")
     end
 
     it "does not double escape special characters" do
       replacements[:quotes] = "Be excellent to eachother ~Bill & Ted's"
-      body.should include("<w:t>Be excellent to eachother ~Bill &amp; Ted&apos;s</w:t>")
+      expect(body).to include("<w:t>Be excellent to eachother ~Bill &amp; Ted&apos;s</w:t>")
     end
   end
 
   context "option off" do
     let(:options){ {convert_newlines: false} }
     it "leaves newlines untouched" do
-      body.should_not include("||quotes||")
-      body.should include("Be excellent to eachother ~Bill and Ted\nTyping is not the bottlneck\nDo something awesome.")
+      expect(body).to_not include("||quotes||")
+      expect(body).to include("Be excellent to eachother ~Bill and Ted\nTyping is not the bottlneck\nDo something awesome.")
     end
   end
 
   context "default" do
     let(:options){ {} }
     it "converts newlines" do
-      body.should include("Bill and Ted<w:br/>Typing")
+      expect(body).to include("Bill and Ted<w:br/>Typing")
     end
   end
 end

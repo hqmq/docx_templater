@@ -4,13 +4,13 @@ describe Docx::DocumentReplacer do
   let(:xml_str){ File.read( File.expand_path('spec/fixtures/header2.xml') )}
   let(:data_provider) do
   	r = double("data_provider", :[] => "Mikey Header")
-  	r.stub(:has_key? => true)
+  	allow(r).to receive(:has_key?).and_return(true)
     r
   end
   it "walks an xml string and replaces values" do
-    xml_str.should include('||header||')
+    expect(xml_str).to include('||header||')
 
-    subject.replaced.should_not include('||header||')
-    subject.replaced.should include('Mikey Header')
+    expect(subject.replaced).not_to include('||header||')
+    expect(subject.replaced).to include('Mikey Header')
   end
 end
